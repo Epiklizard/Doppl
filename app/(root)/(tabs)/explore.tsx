@@ -6,6 +6,8 @@ const explore = () => {
     <View>
       <Text>explore</Text>
     </View>
+
+    
   )
 }
 
