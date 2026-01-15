@@ -10,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text className="font-bold text-lg">NativeWind Check</Text>
+      <Text style={{ fontFamily: 'Vampire Wars' }} className="my-10 text-lg text-4xl">NativeWind Check</Text>
 
 
       <Link href={"/explore"}>Explore</Link>

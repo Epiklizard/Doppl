@@ -8,7 +8,45 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
    ```bash
    npm install
+
+   npx expo install nativewind react-native-reanimated@~3.17.4 react-native-safe-area-context@5.4.0
+   npx expo install --dev tailwindcss@^3.4.17 prettier-plugin-tailwindcss@^0.5.11
    ```
+    GO TO STEP 2
+    
+    ...some app building notes...
+
+    To setup development builds (seeing custom splash screens: https://docs.expo.dev/versions/latest/sdk/splash-screen/)
+
+    ON CLOUD
+    Create a new project to get project id: https://expo.dev/
+    Names can be whatever, but the slug name should match app.json/expo/slug field 
+    eas init creates eas.json
+    build:configure doc = https://github.com/expo/eas-cli?tab=readme-ov-file#eas-buildconfigure
+    ... still not done
+
+    ```bash
+    npm install -g eas-cli
+    npx expo install expo-splash-screen
+    npx eas-cli@latest init --id [project_id_here]
+    eas init 
+    eas build:configure --platform android
+    ```
+
+    LOCALLY BUILD THE FILE
+    https://docs.expo.dev/develop/development-builds/expo-go-to-dev-build/
+    open windows command and go to root folder
+    ```bash
+    npx expo prebuild --clean
+    npx expo run:android --device
+    ```
+    if there are java / misc errors, try gradlew clean first and then the two commands above:
+    ```bash
+    cd android
+    ./gradlew clean
+    cd ..
+    ```
+    took 10 mins first run but it built the .apk AND also opened a development server... wow
 
 2. Start the app
 
