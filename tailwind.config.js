@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        rubik: ["Rubik-Regular", "sans-serif"],
+        "vampire-wars": ["Vampire Wars", "sans-serif"],
+        "rubik": ["Rubik-Regular", "sans-serif"],
         "rubik-bold": ["Rubik-Bold", "sans-serif"],
         "rubik-extrabold": ["Rubik-ExtraBold", "sans-serif"],
         "rubik-medium": ["Rubik-Medium", "sans-serif"],

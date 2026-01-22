@@ -18,7 +18,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
     To setup development builds (seeing custom splash screens: https://docs.expo.dev/versions/latest/sdk/splash-screen/)
 
-    ON CLOUD
+    ON CLOUD (PRODUCTION BUILD - standalone)
     Create a new project to get project id: https://expo.dev/
     Names can be whatever, but the slug name should match app.json/expo/slug field 
     eas init creates eas.json
@@ -33,7 +33,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
     eas build:configure --platform android
     ```
 
-    LOCALLY BUILD THE FILE
+    LOCALLY BUILD THE FILE (DEVELOPMENT BUILD - hot reload, good for dev, depends on metro for main contents)
     https://docs.expo.dev/develop/development-builds/expo-go-to-dev-build/
     open windows command and go to root folder
     ```bash

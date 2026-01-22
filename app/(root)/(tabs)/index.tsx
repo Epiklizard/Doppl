@@ -10,12 +10,13 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text style={{ fontFamily: 'Vampire Wars' }} className="my-10 text-lg text-4xl">NativeWind Check</Text>
+      <Text style={{ fontFamily: 'Vampire Wars' }} className="my-10 text-lg text-3xl">NativeWind Check</Text>
 
-
-      <Link href={"/explore"}>Explore</Link>
-      <Link href={"/sign-in"}>Signin</Link>
-      <Link href={"/profile"}>Profile</Link>
+      <View className="flex flex-col gap-5">
+        <Link href={"/explore"}>Explore</Link>
+        <Link href={"/sign-in"}>Signin</Link>
+        <Link href={"/profile"}>Profile</Link>
+      </View>
 
       {/* example prop tab detail */}
       <Link href={"/properties/1"}>Example Property</Link>

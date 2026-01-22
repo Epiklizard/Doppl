@@ -7,7 +7,8 @@ import { useEffect } from "react";
 import "./globals.css";
 
 export default function RootLayout() {
-  const [fontsLoaded] = useFonts({
+  const [fontsLoaded, error] = useFonts({
+    "Vampire Wars": require("../assets/fonts/Vampire Wars.ttf"),
     "Rubik-Bold": require("../assets/fonts/Rubik-Bold.ttf"),
     "Rubik-ExtraBold": require("../assets/fonts/Rubik-ExtraBold.ttf"),
     "Rubik-Light": require("../assets/fonts/Rubik-Light.ttf"),
@@ -31,6 +32,6 @@ export default function RootLayout() {
     //   <Stack screenOptions={{ headerShown: false }} />
     // </GlobalProvider>
 
-    <Stack></Stack>
+    <Stack screenOptions={{ headerShown: false }}></Stack>
   );
 }
